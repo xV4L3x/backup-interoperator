@@ -6,7 +6,10 @@
   "autoload": {
     "psr-4": {
       "XV4L3X\\BackupInteroperator\\": "src/"
-    }
+    },
+    "files": [
+      "src/config/backup-interoperator.php"
+    ]
   },
   "require": {
     "php": ">=8.0",
