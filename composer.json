@@ -1,0 +1,27 @@
+{
+  "name": "xv4l3x/backup-interoperator",
+  "description": "Laravel package to expose an authenticated backup endpoint using Spatie Laravel Backup.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "XV4L3X\\BackupInteroperator\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "spatie/laravel-backup": ">=9.0.0",
+    "illuminate/support": ">=v10.0.0"
+  },
+  "require-dev": {
+    "illuminate/contracts": ">=10.0.0",
+    "laravel/framework": ">=10.0.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "XV4L3X\\BackupInteroperator\\BackupInteroperatorServiceProvider"
+      ]
+    }
+  }
+}
