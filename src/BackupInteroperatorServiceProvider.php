@@ -17,12 +17,6 @@ class BackupInteroperatorServiceProvider extends ServiceProvider
             __DIR__ . '/config/backup-interoperator.php' => config_path('backup-interoperator.php'),
         ], 'config');
 
-        // Copia automatica del file di configurazione di Spatie (se non già presente)
-        $spatieConfigPath = config_path('backup.php');
-        if (!file_exists($spatieConfigPath)) {
-            copy(__DIR__ . '/../stubs/backup.php', $spatieConfigPath);
-        }
-
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
     }
 }
