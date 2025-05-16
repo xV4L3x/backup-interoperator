@@ -14,7 +14,8 @@
   "require": {
     "php": ">=8.0",
     "spatie/laravel-backup": ">=9.0.0",
-    "illuminate/support": ">=v10.0.0"
+    "illuminate/support": ">=v10.0.0",
+    "league/flysystem-aws-s3-v3": ">=3.0.0"
   },
   "require-dev": {
     "illuminate/contracts": ">=10.0.0",
